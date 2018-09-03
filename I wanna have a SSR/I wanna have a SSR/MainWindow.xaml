@@ -5,8 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:I_wanna_have_a_SSR"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="750" Width="1334" WindowStyle="None">
     <Grid>
+
+        <!--定義位面區塊-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="120"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--左部區塊-->
+        <StackPanel Grid.RowSpan="2" Grid.ColumnSpan="1">
+            <Border Height="75"></Border>
+            <Label Height="50" FontSize="20">Gold coins</Label>
+            <Label Height="50" FontSize="20">Diamond</Label>
+            <Label Height="50" FontSize="20">Leaves</Label>
+        </StackPanel>
+
+        <!--中央上半部區塊-->
+        <StackPanel Grid.Column="1" Grid.RowSpan="1">
+            
+        </StackPanel>
         
+        <!--中央下半部區塊-->
+        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+            <Border Width="200"></Border>
+            <Button Width="200"></Button>
+            <Border Width="100"></Border>
+            <Button Width="200"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal">
+            <Border Width="200"></Border>
+            <Label Width="200" FontSize="20">抽一次</Label>
+            <Border Width="100"></Border>
+            <Label Width="200" FontSize="20">抽十次</Label>
+        </StackPanel>
+
+        <!--右部區塊-->
+        <StackPanel Grid.Column="2" Grid.RowSpan="2"></StackPanel>
     </Grid>
 </Window>
